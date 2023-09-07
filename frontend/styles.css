@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+td {
+    text-align: center;
+}
+
+.navbar {
+    width: 100%;
+    height: fit-content;
+    color: #fff;
+    background-color: #456d96;
+}
+
+.navbar .container {
+    max-width: 1200px;
+    height: 70px;
+    margin: 0, auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#artists-table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-collapse: seperate;
+    overflow: hidden;
+    background-color: coral;
+}
+
+.image {
+    object-fit: cover;
+    width: 100px;
+    height: auto;
+}
+
+#show-artist-container {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+}
+
+.btns-container {
+    display: flex;
+    justify-self: center;
+}
+#btn-delete,
+#btn-edit {
+    width: 100%;
+}
+
+#isFavorite- {
+    background-color: rgb(137, 36, 95);
+}

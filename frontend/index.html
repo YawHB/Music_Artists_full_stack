@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Music Artist</title>
+        <link rel="stylesheet" href="/frontend/styles.css" />
+        <link rel="shortcut icon" href="#" type="image/x-icon" />
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <button id="btn-add-artist">Add Artist</button>
+                <div class="logo">
+                    <h1>Title Here</h1>
+                </div>
+                <div>
+                    <label for="favorites">Favorites</label>
+                    <select name="favorites" id="favorites">
+                        <option value="All" selected>All</option>
+                        <option value="Favorites">Favorites</option>
+                    </select>
+                    <label for="filter">Filter</label>
+                    <select name="filter" id="filter">
+                        <option value="All">All</option>
+                        <option value="Electronic">Electronic</option>
+                        <option value="Indie">Indie</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Pop">Pop</option>
+                        <option value="R&B">R&B</option>
+                        <option value="Alternative">Alternative</option>
+                    </select>
+                    <label for="sort">Sort after</label>
+                    <select name="sort" id="sort">
+                        <option value="NameAZ">Name A-Z</option>
+                        <option value="NameZA">Name Z-A</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <table id="artists-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th><h3>Name</h3></th>
+                    <th><h3>Birthday</h3></th>
+                    <th><h3>Active since</h3></th>
+                </tr>
+            </thead>
+            <tbody id="artists-table-content"></tbody>
+            <dialog id="show-artist-dialog"></dialog>
+        </table>
+        <script src="/frontend/app.js" type="module"></script>
+    </body>
+</html>
